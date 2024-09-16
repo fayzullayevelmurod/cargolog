@@ -1,0 +1,446 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nekst", sans-serif;
+  font-weight: 400;
+  color: #1d293f;
+  padding-bottom: 300px;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1381px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.orange-btn {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  background: #e94c1e;
+  color: #fff;
+  width: 94px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.secondary-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: -0.827586174px;
+}
+
+.title {
+  font-size: 58px;
+  font-weight: bold;
+  line-height: 64px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.header {
+  padding-top: 13px;
+  background: #f7f8fa;
+}
+.header-nav__list {
+  gap: 45px;
+}
+.header-nav__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #1d293f;
+  text-decoration: none;
+}
+
+.intro {
+  padding-top: 100px;
+  background: #f7f8fa;
+  overflow: hidden;
+}
+.intro .container {
+  position: relative;
+}
+.intro-content {
+  max-width: 860.75px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.intro-title {
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+.intro-desc {
+  font-size: 21px;
+  line-height: 30px;
+  color: #7c8087;
+  margin: 22px 0 43px 0;
+}
+.intro-btn {
+  width: 361.28px;
+  margin: 0 auto 52px auto;
+}
+.intro-phone__img {
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  z-index: -1;
+}
+.intro-desctop__img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2509803922));
+}
+.intro-images {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.intro-images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 175px;
+  border: 1px solid #f3f3f3;
+  width: 282px;
+  height: 282px;
+  border-radius: 50%;
+  background: #e94c1f;
+  z-index: -1;
+}
+
+.section-simplicity {
+  padding: 113px 0 97px 0;
+}
+.section-simplicity__container {
+  padding-left: 111px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.section-simplicity__content {
+  max-width: 557px;
+  width: 100%;
+  padding-top: 10px;
+}
+.section-simplicity__list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.section-simplicity__item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.section-simplicity__item-number {
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  height: 60px;
+  background: #f7f8fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #000;
+}
+.section-simplicity__item-item-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.our-services {
+  padding: 77px 0 82px 0;
+  background: #f3f3f3;
+}
+.our-services__cards {
+  margin-top: 44px;
+  row-gap: 33px;
+}
+.our-services__card {
+  padding: 68px 45px 74px 45px;
+  background: #fff;
+  box-shadow: 0px 2px 0px -5px rgba(14, 86, 124, 0.1647058824);
+}
+.our-services__card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.our-services__card .logo-box {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  border-radius: 50%;
+}
+.our-services__card .logo-box.orange {
+  background: #fb5228;
+}
+.our-services__card .logo-box.yellow {
+  background: #c4ef17;
+}
+.our-services__card .logo-box.gold {
+  background: #ffbf00;
+}
+.our-services__card .logo-box.red {
+  background: #ff7a7b;
+}
+.our-services__card .logo-box.pink {
+  background: #9c53fa;
+}
+.our-services__card .logo-box.blue {
+  background: #0f53fa;
+}
+.our-services__card-desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #8c97ac;
+}
+
+.maximum-possibilities {
+  padding: 91px 0 116px 0;
+}
+.maximum-possibilities .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.maximum-possibilities__content {
+  padding-top: 36px;
+}
+.maximum-possibilities__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 60px;
+  max-width: 395px;
+  width: 100%;
+}
+.maximum-possibilities__list-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.maximum-possibilities__list-item-title {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.maximum-possibilities__list-item-desc {
+  color: #7c8087;
+  font-size: 16px;
+  line-height: 28px;
+}
+.maximum-possibilities__list .logo-box {
+  min-width: 83px;
+  min-height: 83px;
+  max-width: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e4e8;
+  border-radius: 10px;
+}
+.maximum-possibilities__gif {
+  padding-left: 138px;
+  max-width: 716px;
+  height: 608px;
+  width: 100%;
+}
+.maximum-possibilities__gif img {
+  width: 100%;
+  height: 100%;
+}
+
+.step {
+  background: url(../images/step-bg.png) no-repeat;
+  background-size: cover;
+  padding: 83px 0 94px 0;
+}
+.step-content {
+  text-align: center;
+  max-width: 578px;
+  width: 100%;
+  margin: 0 auto;
+}
+.step-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.2px;
+  margin-bottom: 48px;
+}
+.step-form__box {
+  display: flex;
+  gap: 20px;
+}
+.step .input-box input {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  height: 55px;
+  padding: 18px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #cdcdcd;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+.step .input-box input::-moz-placeholder {
+  color: #cdcdcd;
+}
+.step .input-box input::placeholder {
+  color: #cdcdcd;
+}
+.step .input-box span {
+  padding-top: 14px;
+  font-size: 10px;
+  display: block;
+  font-weight: 400;
+  line-height: 12px;
+  color: #e6e6e6;
+  text-align: left;
+}
+.step .orange-btn {
+  height: 55px;
+  min-width: 94px;
+}
+
+.questions {
+  padding: 66px 0 121px 0;
+}
+.questions-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 87px 0 111px;
+}
+.questions-content {
+  max-width: 450px;
+  width: 100%;
+}
+.questions-logo {
+  width: 201px;
+  height: 201px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  border-radius: 50%;
+  margin-left: auto;
+}
+.questions .platforms {
+  max-width: 1355px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 92px;
+}
+.questions .platforms-content {
+  min-width: 425px;
+  max-width: 425px;
+}
+.questions .platforms-content__desc {
+  margin: 25px 0 30px 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #7c8087;
+  font-weight: lighter;
+}
+.questions .platforms .title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0 8275861740112305px;
+  text-align: left;
+}
+.questions .platforms .stores {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.questions .platforms .stores > a {
+  width: 239px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  gap: 26px;
+  border-radius: 5px;
+  color: #1d293f;
+}
+.questions .platforms .stores > a span {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 28px;
+  display: block;
+  color: #7c8087;
+}
+.questions .platforms .stores > a .store-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 34px;
+}
+.questions .platforms .stores .appstore {
+  background: #303030;
+}
+.questions .platforms .stores .appstore span {
+  color: #e9f7fe;
+}
+.questions .platforms .stores .appstore .store-title {
+  color: #fff;
+}
+.questions .platforms .stores .playstore {
+  border: 2px solid #e2e4e8;
+}/*# sourceMappingURL=main.css.map */
