@@ -28,7 +28,6 @@ body {
   font-family: "Nekst", sans-serif;
   font-weight: 400;
   color: #1d293f;
-  padding-bottom: 300px;
 }
 
 button {
@@ -118,6 +117,8 @@ button {
 .intro-btn {
   width: 361.28px;
   margin: 0 auto 52px auto;
+  height: 55px;
+  font-size: 16px;
 }
 .intro-phone__img {
   position: absolute;
@@ -351,6 +352,7 @@ button {
 }
 .step .orange-btn {
   height: 55px;
+  font-size: 16px;
   min-width: 94px;
 }
 
@@ -443,4 +445,82 @@ button {
 }
 .questions .platforms .stores .playstore {
   border: 2px solid #e2e4e8;
+}
+
+.footer {
+  padding: 42px 0 22px 0;
+  background: #333333;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 434px;
+  height: 434px;
+  top: -53%;
+  right: -18%;
+  border-radius: 46px;
+  background: #e94c1f;
+  transform: rotate(53deg);
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: -160px;
+  left: -100px;
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  background: #e94c1f;
+}
+.footer-container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+.footer-container .footer-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.footer .line {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: #313d55;
+  margin: 33px 0 21px 0;
+}
+.footer .o-company {
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 28px;
+  color: #8c97ac;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.footer ul li,
+.footer ul a {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 28px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #e94c1f;
+  margin-bottom: 17px;
+}
+.footer-right {
+  padding-top: 20px;
+}
+.footer-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }/*# sourceMappingURL=main.css.map */

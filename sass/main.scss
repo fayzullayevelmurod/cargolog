@@ -25,7 +25,6 @@ body {
   font-family: 'Nekst', sans-serif;
   font-weight: 400;
   color: #1d293f;
-  padding-bottom: 300px;
 }
 button {
   border: none;
@@ -114,6 +113,8 @@ button {
   &-btn {
     width: 361.28px;
     margin: 0 auto 52px auto;
+    height: 55px;
+    font-size: 16px;
   }
   &-phone__img {
     position: absolute;
@@ -361,6 +362,7 @@ button {
   }
   .orange-btn {
     height: 55px;
+    font-size: 16px;
     min-width: 94px;
   }
 }
@@ -460,3 +462,89 @@ button {
   }
 }
 // questions end
+
+// footer start
+.footer {
+  padding: 42px 0 22px 0;
+  background: #333333;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 434px;
+    height: 434px;
+    top: -53%;
+    right: -18%;
+    border-radius: 46px;
+    background: #e94c1f;
+    transform: rotate(53deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -160px;
+    left: -100px;
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    background: #e94c1f;
+  }
+
+  &-container {
+    max-width: 1112px;
+    margin: 0 auto;
+
+    .footer-row {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+  .line {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #313d55;
+    margin: 33px 0 21px 0;
+  }
+  .o-company {
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 28px;
+    color: #8c97ac;
+  }
+  &-logo {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  ul {
+    li,
+    a {
+      font-size: 16px;
+      font-weight: lighter;
+      line-height: 28px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #e94c1f;
+    margin-bottom: 17px;
+  }
+  &-right {
+    padding-top: 20px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+// footer end
