@@ -43,9 +43,15 @@
             <li class="header-nav__item">
               <a class="header-nav__link" href="#!">Контакты</a>
             </li>
+            <a class="orange-btn media-show__btn" href="#!">Войти</a>
           </ul>
         </nav>
         <a class="orange-btn" href="#!">Войти</a>
+        <button class="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
     <!-- header -->
@@ -109,7 +115,7 @@
         <div class="container">
           <h2 class="title">Наши сервисы</h2>
           <div class="row our-services__cards">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
               <div class="our-services__card">
                 <div class="our-services__card-top">
                   <div class="logo-box orange">
@@ -122,7 +128,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
               <div class="our-services__card">
                 <div class="our-services__card-top">
                   <div class="logo-box gold">
@@ -135,7 +141,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
               <div class="our-services__card">
                 <div class="our-services__card-top">
                   <div class="logo-box yellow">
@@ -148,7 +154,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
               <div class="our-services__card">
                 <div class="our-services__card-top">
                   <div class="logo-box pink">
@@ -162,7 +168,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
               <div class="our-services__card">
                 <div class="our-services__card-top">
                   <div class="logo-box blue">
@@ -175,7 +181,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
               <div class="our-services__card">
                 <div class="our-services__card-top">
                   <div class="logo-box red">
@@ -259,17 +265,98 @@
       </section>
       <!-- step end -->
 
-      <!-- questions start -->
-      <section class="questions">
-        <div class="questions-container">
-          <div class="questions-content">
-            <h2 class="secondary-title">Часто <br> Задаваемые <br> Вопросы</h2>
-            <div class="questions-logo">
-              <img src="images/icons/question-icon.svg" alt="question-icon">
+
+      <section class="faq pt-120">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="xb-faq-content">
+                <div class="sec-title mt-195 mb-125">
+                  <h2 class="title">Часто <br>Задаваемые<br> Вопросы</h2>
+                </div>
+                <div class="questions-logo">
+                  <img src="images/icons/question-icon.svg" alt="question-icon">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="xb-faq">
+                <ul class="accordion_box clearfix">
+                  <li class="accordion block">
+                    <div class="acc-btn">
+                      Как зарегистрироваться в системе Грузлог и настроить свой аккаунт?
+                      <span class="arrow"></span>
+                    </div>
+                    <div class="acc_body ">
+                      <div class="content">
+                        <p>Для регистрации в системе необходимо перейти на сайт Грузлог и заполнить форму регистрации,
+                          указав контактные данные компании. После подтверждения данных можно приступить к настройке
+                          учетной записи, добавлению транспортных средств и сотрудников.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion block">
+                    <div class="acc-btn">
+                      Какие сервисы входят в платформу Грузлог?
+                      <span class="arrow"></span>
+                    </div>
+                    <div class="acc_body">
+                      <div class="content">
+                        <p>Платформа включает более 13 сервисов, такие как: планирование маршрутов, отслеживание грузов
+                          в реальном времени, автоматизация документооборота, расчет стоимости перевозок, мониторинг
+                          транспортных средств и многие другие инструменты для удобного управления логистикой.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion block">
+                    <div class="acc-btn">
+                      Насколько безопасна работа с Грузлог?
+                      <span class="arrow"></span>
+                    </div>
+                    <div class="acc_body">
+                      <div class="content">
+
+                        <p>Грузлог обеспечивает высокий уровень безопасности данных и операций. Все взаимодействия
+                          защищены современными протоколами шифрования, а также предусмотрены функции для контроля
+                          доступа и мониторинга безопасности грузов на каждом этапе перевозки.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion block">
+                    <div class="acc-btn">
+                      Подходит ли Грузлог для частных перевозчиков или только для крупных компаний?
+                      <span class="arrow"></span>
+                    </div>
+                    <div class="acc_body">
+                      <div class="content">
+                        <p>Платформа Грузлог подходит как для крупных транспортных компаний, так и для частных
+                          перевозчиков. Все инструменты гибко настраиваются под нужды бизнеса любого масштаба, что
+                          делает сервис универсальным решением для всех участников рынка.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion block">
+                    <div class="acc-btn">
+                      Можно ли интегрировать Грузлог с другими системами управления?
+                      <span class="arrow"></span>
+                    </div>
+                    <div class="acc_body">
+                      <div class="content">
+                        <p>Да, Грузлог поддерживает интеграцию с различными системами управления и учета, что позволяет
+                          пользователям легко синхронизировать данные между платформами и улучшить взаимодействие с
+                          другими бизнес-процессами.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <img class="question-bg" src="images/question-bg.png" alt="">
         </div>
+      </section>
+
+      <!-- questions start -->
+      <section class="questions">
         <div class="platforms">
           <div class="platforms-img">
             <img src="images/app.png" alt="app">
@@ -300,6 +387,7 @@
         </div>
       </section>
       <!-- questions end -->
+
 
     </main>
     <!-- main -->
