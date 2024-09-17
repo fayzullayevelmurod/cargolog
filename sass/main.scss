@@ -133,10 +133,12 @@ button {
   }
 }
 // header end
-
+main {
+  padding-top: 157px;
+  background: #f7f8fa;
+}
 // intro start
 .intro {
-  padding-top: 157px;
   background: #f7f8fa;
   overflow: hidden;
   .container {
@@ -202,6 +204,7 @@ button {
 // section-simplicity start
 .section-simplicity {
   padding: 113px 0 97px 0;
+  background: #fff;
   &__container {
     padding-left: 111px;
     display: flex;
@@ -313,6 +316,7 @@ button {
 // maximum possibilities start
 .maximum-possibilities {
   padding: 91px 0 116px 0;
+  background: #fff;
 
   .container {
     display: flex;
@@ -431,6 +435,7 @@ button {
 // questions start
 .questions {
   padding: 66px 25px 121px 25px;
+  background: #fff;
   &-container {
     display: flex;
     align-items: center;
@@ -733,7 +738,9 @@ button {
 .accordion_box .block .acc_body.current {
   display: block;
 }
-
+.faq {
+  background: #fff;
+}
 .xb-faq2 {
   padding: 0;
 }
@@ -1011,7 +1018,7 @@ button {
     font-size: 36px;
     line-height: 43px;
   }
-  .intro {
+  main {
     padding-top: 123px;
   }
   .intro-desc {

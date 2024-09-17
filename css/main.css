@@ -131,8 +131,12 @@ button {
   text-decoration: none;
 }
 
-.intro {
+main {
   padding-top: 157px;
+  background: #f7f8fa;
+}
+
+.intro {
   background: #f7f8fa;
   overflow: hidden;
 }
@@ -195,6 +199,7 @@ button {
 
 .section-simplicity {
   padding: 113px 0 97px 0;
+  background: #fff;
 }
 .section-simplicity__container {
   padding-left: 111px;
@@ -301,6 +306,7 @@ button {
 
 .maximum-possibilities {
   padding: 91px 0 116px 0;
+  background: #fff;
 }
 .maximum-possibilities .container {
   display: flex;
@@ -412,6 +418,7 @@ button {
 
 .questions {
   padding: 66px 25px 121px 25px;
+  background: #fff;
 }
 .questions-container {
   display: flex;
@@ -707,6 +714,10 @@ button {
   display: block;
 }
 
+.faq {
+  background: #fff;
+}
+
 .xb-faq2 {
   padding: 0;
 }
@@ -981,7 +992,7 @@ button {
     font-size: 36px;
     line-height: 43px;
   }
-  .intro {
+  main {
     padding-top: 123px;
   }
   .intro-desc {
