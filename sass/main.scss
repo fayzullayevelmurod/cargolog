@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -15,17 +16,20 @@ p {
   margin: 0;
   padding: 0;
 }
+
 ul,
 ol {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
+
 body {
   font-family: 'Nekst', sans-serif;
   font-weight: 400;
   color: #1d293f;
 }
+
 button {
   border: none;
   padding: 0;
@@ -52,6 +56,11 @@ button {
   justify-content: center;
   text-decoration: none;
   border-radius: 5px;
+  transition: all .2s linear;
+
+  &:hover {
+    background: #d35400; // Slightly darker color on hover
+  }
 }
 
 .secondary-title {
@@ -60,6 +69,7 @@ button {
   line-height: 50px;
   letter-spacing: -0.8275861740112305px;
 }
+
 .title {
   font-size: 58px;
   font-weight: bold;
@@ -67,7 +77,12 @@ button {
   letter-spacing: -1px;
   text-align: center;
 }
+
 // header start
+.overlay {
+  display: none;
+}
+
 .header {
   padding: 13px 0;
   background: #f7f8fa;
@@ -88,6 +103,7 @@ button {
     flex-direction: column;
     gap: 8px;
     align-items: end;
+
     span {
       width: 30px;
       height: 3px;
@@ -99,10 +115,12 @@ button {
       &:nth-child(2) {
         width: 19px;
       }
+
       &:last-child {
         width: 27px;
       }
     }
+
     &.active {
       span {
         &:last-child {
@@ -111,19 +129,23 @@ button {
           left: 0;
           width: 30px;
         }
+
         &:first-child {
           top: 11px;
           transform: rotate(-45deg);
         }
+
         &:nth-child(2) {
           opacity: 0;
         }
       }
     }
   }
+
   &-nav__list {
     gap: 45px;
   }
+
   &-nav__link {
     font-size: 16px;
     font-weight: 400;
@@ -132,51 +154,61 @@ button {
     text-decoration: none;
   }
 }
+
 // header end
 main {
   padding-top: 157px;
   background: #f7f8fa;
 }
+
 // intro start
 .intro {
   background: #f7f8fa;
   overflow: hidden;
+
   .container {
     position: relative;
   }
+
   &-content {
     max-width: 860.75px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
   }
+
   &-title {
     font-size: 58px;
     font-weight: 400;
     line-height: 64px;
     letter-spacing: -1px;
   }
+
   &-desc {
     font-size: 21px;
     line-height: 30px;
     color: #7c8087;
     margin: 22px 0 43px 0;
   }
+
   &-btn {
     width: 361.28px;
     margin: 0 auto 52px auto;
     height: 55px;
     font-size: 16px;
   }
+
   &-phone__img {
     position: absolute;
     bottom: 0;
     left: -148px;
     z-index: -1;
   }
+
   &-desctop__img {
     filter: drop-shadow(0px 4px 4px #00000040);
   }
+
   &-images {
     text-align: center;
     position: relative;
@@ -199,40 +231,48 @@ main {
     }
   }
 }
+
 // intro end
 
 // section-simplicity start
 .section-simplicity {
   padding: 113px 0 97px 0;
   background: #fff;
+
   &__container {
     padding-left: 111px;
     display: flex;
     align-items: start;
     justify-content: space-between;
   }
+
   &__content {
     max-width: 557px;
     width: 100%;
     padding-top: 10px;
   }
+
   &__image {
     max-width: calc(100% - 557px);
     min-width: 600px;
+
     img {
       width: 100%;
     }
   }
+
   &__list {
     display: flex;
     gap: 32px;
     flex-direction: column;
     margin-top: 50px;
   }
+
   &__item {
     display: flex;
     align-items: center;
     gap: 18px;
+
     &-number {
       min-width: 60px;
       min-height: 60px;
@@ -248,6 +288,7 @@ main {
       line-height: 34px;
       color: #000;
     }
+
     &-item-text {
       font-size: 24px;
       font-weight: 400;
@@ -255,6 +296,7 @@ main {
     }
   }
 }
+
 // section-simplicity end
 
 // Our services start
@@ -266,17 +308,20 @@ main {
     margin-top: 44px;
     row-gap: 33px;
   }
+
   &__card {
     padding: 68px 45px 74px 45px;
     background: #fff;
     box-shadow: 0px 2px 0px -5px rgba(14, 86, 124, 0.1647058824);
     height: 100%;
+
     &-top {
       display: flex;
       align-items: center;
       gap: 12px;
       margin-bottom: 28px;
     }
+
     .logo-box {
       height: 42px;
       display: flex;
@@ -284,25 +329,32 @@ main {
       justify-content: center;
       width: 42px;
       border-radius: 50%;
+
       &.orange {
         background: #fb5228;
       }
+
       &.yellow {
         background: #c4ef17;
       }
+
       &.gold {
         background: #ffbf00;
       }
+
       &.red {
         background: #ff7a7b;
       }
+
       &.pink {
         background: #9c53fa;
       }
+
       &.blue {
         background: #0f53fa;
       }
     }
+
     &-desc {
       font-size: 18px;
       font-weight: 400;
@@ -311,6 +363,7 @@ main {
     }
   }
 }
+
 // Our services end
 
 // maximum possibilities start
@@ -323,9 +376,11 @@ main {
     justify-content: space-between;
     align-items: start;
   }
+
   &__content {
     padding-top: 36px;
   }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -344,12 +399,14 @@ main {
         font-weight: 400;
         line-height: 34px;
       }
+
       &-desc {
         color: #7c8087;
         font-size: 16px;
         line-height: 28px;
       }
     }
+
     .logo-box {
       min-width: 83px;
       min-height: 83px;
@@ -361,24 +418,32 @@ main {
       border-radius: 10px;
     }
   }
+
   &__gif {
     padding-right: 138px;
     max-width: 716px;
     height: 608px;
     width: 100%;
+
     img {
       width: 100%;
       height: 100%;
     }
   }
 }
+
 // maximum possibilities end
 
 // step start
 .step {
-  background: url(../images/step-bg.png) no-repeat;
+  background-attachment: fixed;
+  /* Parallax uchun muhim */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 83px 0 94px 0;
+  width: 100%;
+  background-image: url(../images/step-bg.png);
 
   &-content {
     text-align: center;
@@ -386,6 +451,7 @@ main {
     width: 100%;
     margin: 0 auto;
   }
+
   &-title {
     color: #fff;
     font-size: 36px;
@@ -393,10 +459,12 @@ main {
     line-height: 43.2px;
     margin-bottom: 48px;
   }
+
   &-form__box {
     display: flex;
     gap: 20px;
   }
+
   .input-box {
     input {
       border: 1px solid #e3e3e3;
@@ -410,10 +478,12 @@ main {
       display: block;
       width: 100%;
       outline: none;
+
       &::placeholder {
         color: #cdcdcd;
       }
     }
+
     span {
       padding-top: 14px;
       font-size: 10px;
@@ -424,18 +494,21 @@ main {
       text-align: left;
     }
   }
+
   .orange-btn {
     height: 55px;
     font-size: 16px;
     min-width: 94px;
   }
 }
+
 // step end
 
 // questions start
 .questions {
   padding: 66px 25px 121px 25px;
   background: #fff;
+
   &-container {
     display: flex;
     align-items: center;
@@ -443,10 +516,12 @@ main {
     gap: 1rem;
     padding: 0 87px 0 111px;
   }
+
   &-content {
     max-width: 450px;
     width: 100%;
   }
+
   &-logo {
     width: 201px;
     height: 201px;
@@ -465,9 +540,11 @@ main {
     display: flex;
     align-items: center;
     gap: 92px;
+
     &-img {
       width: 50%;
     }
+
     &-content {
       min-width: 425px;
       max-width: 425px;
@@ -481,6 +558,7 @@ main {
         font-weight: lighter;
       }
     }
+
     .title {
       font-size: 48px;
       font-weight: 400;
@@ -488,11 +566,13 @@ main {
       letter-spacing: -0 8275861740112305px;
       text-align: left;
     }
+
     .stores {
       display: flex;
       flex-direction: column;
       gap: 15px;
-      & > a {
+
+      &>a {
         width: 239px;
         height: 75px;
         display: flex;
@@ -502,6 +582,7 @@ main {
         gap: 26px;
         border-radius: 5px;
         color: #1d293f;
+
         span {
           font-size: 16px;
           font-weight: lighter;
@@ -509,27 +590,33 @@ main {
           display: block;
           color: #7c8087;
         }
+
         .store-title {
           font-size: 24px;
           font-weight: 300;
           line-height: 34px;
         }
       }
+
       .appstore {
         background: #303030;
+
         span {
           color: #e9f7fe;
         }
+
         .store-title {
           color: #fff;
         }
       }
+
       .playstore {
         border: 2px solid #e2e4e8;
       }
     }
   }
 }
+
 // questions end
 
 // footer start
@@ -574,6 +661,7 @@ main {
       flex-wrap: wrap;
     }
   }
+
   .line {
     width: 100%;
     display: block;
@@ -581,17 +669,21 @@ main {
     background: #313d55;
     margin: 33px 0 21px 0;
   }
+
   .o-company {
     font-size: 13px;
     font-weight: lighter;
     line-height: 28px;
     color: #8c97ac;
   }
+
   &-logo {
     display: inline-block;
     margin-bottom: 15px;
   }
+
   ul {
+
     li,
     a {
       font-size: 16px;
@@ -601,6 +693,7 @@ main {
       text-decoration: none;
     }
   }
+
   h3 {
     font-size: 18px;
     font-weight: 400;
@@ -608,8 +701,10 @@ main {
     color: #e94c1f;
     margin-bottom: 17px;
   }
+
   &-right {
     padding-top: 20px;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -617,6 +712,7 @@ main {
     }
   }
 }
+
 // footer end
 
 .accordion_box {
@@ -634,6 +730,7 @@ main {
   -o-border-radius: 20px;
   margin-bottom: 20px;
 }
+
 .accordion_box .block::before {
   position: absolute;
   width: 52px;
@@ -647,7 +744,7 @@ main {
   content: '';
   top: -22px;
   right: 4px;
-  z-index: -1;
+  z-index: 0;
   -webkit-transform: rotate(-134deg);
   -ms-transform: rotate(-134deg);
   transform: rotate(-134deg);
@@ -666,6 +763,7 @@ main {
   padding: 29px 40px;
   padding-right: 70px;
 }
+
 .accordion_box .block .acc-btn .arrow {
   position: absolute;
   right: 27px;
@@ -680,6 +778,7 @@ main {
   background-color: #fff;
   box-shadow: 0px 4px 7px rgba(178, 190, 205, 0.29);
 }
+
 .accordion_box .block .acc-btn .arrow::before {
   top: 8px;
   left: 15px;
@@ -716,15 +815,19 @@ main {
   padding: 0 40px;
   padding-bottom: 35px;
 }
+
 .accordion_box .block .content p:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .accordion_box .block .content ul {
   list-style: none;
 }
+
 .accordion_box .block .content ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .accordion_box .block .content ul li i {
   margin-right: 10px;
   font-size: 16px;
@@ -732,18 +835,47 @@ main {
 
 .accordion_box .block .acc_body {
   position: relative;
-  display: none;
 }
 
 .accordion_box .block .acc_body.current {
   display: block;
 }
+
+.accordion_box .block .acc_body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.accordion_box .block.active-block .acc_body {
+  max-height: 1000px;
+}
+
+.accordion_box .block .acc-btn {
+  cursor: pointer;
+}
+
+.accordion_box .block .acc-btn .arrow::before {
+  content: '\f067';
+  /* Default arrow down */
+}
+
+.accordion_box .block.active-block .acc-btn .arrow::before {
+  content: '\f068';
+  /* Arrow up when active */
+  transform: rotate(180deg);
+  /* Rotate when active */
+  transition: transform 0.5s ease;
+}
+
 .faq {
   background: #fff;
 }
+
 .xb-faq2 {
   padding: 0;
 }
+
 .xb-faq2 .accordion_box .block {
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -755,6 +887,7 @@ main {
   margin: 0;
   margin-top: -1px;
 }
+
 .xb-faq2 .accordion_box .block .acc-btn {
   padding: 32px 40px;
   padding-right: 100px;
@@ -762,6 +895,7 @@ main {
   color: #110f10;
   background-color: #fff;
 }
+
 @media (max-width: 767px) {
   .xb-faq2 .accordion_box .block .acc-btn {
     padding: 25px;
@@ -769,6 +903,7 @@ main {
     font-size: 18px;
   }
 }
+
 .xb-faq2 .accordion_box .block .acc-btn .arrow {
   width: 30px;
   height: 30px;
@@ -778,16 +913,19 @@ main {
   right: 38px;
   z-index: 1;
 }
+
 @media (max-width: 767px) {
   .xb-faq2 .accordion_box .block .acc-btn .arrow {
     right: 25px;
   }
 }
+
 .xb-faq2 .accordion_box .block .acc-btn .arrow::before {
   top: 0px;
   left: 10px;
   font-size: 14px;
 }
+
 .xb-faq2 .accordion_box .block .acc-btn .arrow::after {
   position: absolute;
   left: 0;
@@ -807,18 +945,22 @@ main {
   transition: 0.3s;
   opacity: 0;
 }
+
 .xb-faq2 .accordion_box .block.active-block .acc-btn .arrow::before {
   color: #fff;
 }
+
 .xb-faq2 .accordion_box .block.active-block .acc-btn .arrow::after {
   opacity: 1;
 }
+
 .xb-faq2 .accordion_box .block .content {
   padding: 35px 40px;
   padding-right: 100px;
   font-size: 18px;
   line-height: 28px;
 }
+
 @media (max-width: 767px) {
   .xb-faq2 .accordion_box .block .content {
     padding: 25px;
@@ -828,25 +970,30 @@ main {
 .faq-shape .shape {
   position: absolute;
 }
+
 .faq-shape .shape--1 {
   top: 11%;
   left: 4%;
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .faq-shape .shape--1 {
     top: 5%;
     left: 3%;
   }
 }
+
 @media (max-width: 1199px) {
   .faq-shape .shape--1 {
     top: 4%;
   }
 }
+
 .faq-shape .shape--2 {
   right: 3%;
   top: 13%;
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .faq-shape .shape--2 {
     right: 3%;
@@ -861,6 +1008,7 @@ main {
 .pt-120 {
   padding-top: 120px;
 }
+
 .sec-title {
   .title {
     text-align: left;
@@ -875,39 +1023,48 @@ main {
     right: -26%;
   }
 }
+
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 100%;
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .section-simplicity__container {
     padding-left: 25px;
     padding-right: 25px;
   }
 }
+
 @media screen and (max-width: 1300px) {
+
   .footer::before,
   .footer::after {
     display: none;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .maximum-possibilities__gif {
     padding-right: 0;
   }
+
   .maximum-possibilities__content {
     min-width: 403px;
   }
+
   .questions .platforms {
     justify-content: space-between;
     max-width: 100%;
   }
+
   .questions .platforms-img {
     img {
       width: 100%;
     }
   }
+
   .questions .platforms {
     gap: 1rem;
   }
@@ -917,85 +1074,113 @@ main {
   .intro-desctop__img {
     width: 90%;
   }
+
   .intro-phone__img {
     left: -77px;
   }
+
   .intro-images::before {
     right: -30px;
   }
+
   .section-simplicity__image {
     display: none;
   }
+
   .section-simplicity__content {
     max-width: 100%;
   }
+
   .section-simplicity {
     padding: 43px 0 75px 0;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .overlay {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+
+    &.show {
+      display: block;
+    }
+  }
+
   .header {
+
     .hamburger-btn {
       display: flex;
     }
+
     .orange-btn {
       display: none;
     }
+
     .media-show__btn {
       display: flex;
     }
+
     nav {
-      display: none;
       position: fixed;
-      top: 58px;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      top: 71px;
       z-index: 100;
+      left: -100%;
+      transition: all .3s linear;
+      width: 50%;
+      height: 100%;
+      background: #fff;
+      padding: 20px;
 
       &.show {
-        display: block;
+        left: 0;
       }
 
       .header-nav__list {
         flex-direction: column;
         gap: 10px;
-        width: 50%;
-        height: 100%;
-        background: #fff;
-        padding: 20px;
       }
     }
   }
+
   .maximum-possibilities__gif {
     display: none;
   }
+
   .maximum-possibilities__content {
     min-width: fit-content;
     width: 100%;
   }
+
   .xb-faq-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 33px;
   }
+
   .questions-logo {
     margin-right: 0;
   }
+
   .questions .platforms {
     flex-direction: column;
   }
+
   .questions .platforms-img {
     width: 100%;
   }
+
   .questions .platforms-content {
     max-width: 100%;
     min-width: unset;
     text-align: center;
   }
+
   .questions .platforms .title {
     text-align: center;
   }
@@ -1005,147 +1190,183 @@ main {
   .questions {
     padding-top: 0;
   }
+
   .questions-logo {
     width: 75px;
     height: 75px;
     margin-right: 0;
+
     img {
       width: 24px;
       height: 54px;
     }
   }
+
   .intro-title {
     font-size: 36px;
     line-height: 43px;
   }
+
   main {
     padding-top: 123px;
   }
+
   .intro-desc {
     margin: 33px 0 56px 0;
     font-size: 16px;
     line-height: 30px;
   }
+
   .intro-btn {
     height: 58px;
     width: 269px;
     margin: 0 auto;
   }
+
   .intro-images {
     width: 100%;
     height: 282px;
     background: url(../images/media-intro-img.png) no-repeat;
     background-position: bottom center;
     background-size: 500px;
+
     img,
     &::before {
       display: none;
     }
   }
+
   .secondary-title,
   .title {
     font-size: 22px;
     line-height: 30px;
   }
+
   .section-simplicity__list {
     gap: 52px;
     margin-top: 40px;
   }
+
   .section-simplicity__item-number {
     width: 59px;
     height: 59px;
   }
+
   .section-simplicity__item-item-text {
     font-size: 18px;
     line-height: 34px;
   }
+
   .our-services {
     padding: 37px 0 94px 0;
   }
+
   .our-services__cards {
     margin-bottom: 56px;
     gap: 25px;
   }
+
   .our-services__card {
     padding: 53px 36px 48px 36px;
   }
+
   .our-services__card-top {
     margin-bottom: 18px;
     gap: 9px;
   }
-  .header nav .header-nav__list {
+
+  .header nav {
     width: 80%;
   }
+
   .maximum-possibilities__list {
     margin-top: 40px;
   }
+
   .maximum-possibilities__list-item-desc {
     font-size: 14px;
     line-height: 28px;
   }
+
   .step {
     padding: 71px 0 35px 0;
   }
+
   .step-content {
     max-width: 100%;
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .step-title {
     font-size: 22px;
     line-height: 26.4px;
     margin-bottom: 73px;
   }
+
   .step-form__box {
     row-gap: 23px;
     flex-wrap: wrap;
   }
+
   .footer-container .footer-row {
     flex-direction: column;
     row-gap: 35px;
   }
+
   .footer-right {
     padding-top: 0;
   }
+
   .footer-container {
     padding-left: 40px;
   }
+
   .footer-logo {
     transform: translateX(-20px);
   }
+
   .footer {
     padding: 40px 0 40px 0;
   }
+
   .footer .o-company {
     text-align: center;
     width: 200px;
     display: block;
     margin: 0 auto;
   }
+
   .footer .line {
     background: #fff;
     margin: 47px 0 17px 0;
   }
+
   .faq {
     padding: 31px 0 56px 0;
   }
+
   .questions .platforms .title {
     font-size: 22px;
     line-height: 26.4px;
   }
+
   .questions .platforms-content__desc {
     font-size: 16px;
     margin: 25px 0 30px 0;
   }
+
   .questions .platforms .stores {
     gap: 35px;
     align-items: center;
   }
 }
+
 @media screen and (max-width: 500px) {
   .intro-images {
     background-size: 354.68px;
   }
+
   .questions .platforms-img {
     width: 354px;
   }
@@ -1162,4 +1383,11 @@ main {
 .accordion_box .block.active-block .acc-btn .arrow::before {
   content: '-';
   transform: translate(-50%, -50%) rotate(0) !important;
+}
+
+@media (max-width: 768px) {
+  .step {
+    background-attachment: scroll;
+    /* Mobil qurilmalar uchun parallaxni o'chirish */
+  }
 }
